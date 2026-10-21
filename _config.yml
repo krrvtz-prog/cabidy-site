@@ -1,0 +1,2 @@
+# GitHub Pages ignora pastas que começam com ponto; esta linha publica o security.txt.
+include: [".well-known"]

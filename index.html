@@ -3,16 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cabidy — Cabidy</title>
-<meta name="description" content="Guarda-roupa, estilista e provador virtual com IA.">
+<title>TapLook — Viu, provou.</title>
+<meta name="description" content="Provador virtual com IA: viu uma roupa numa rede social ou numa loja? Em segundos, você se vê vestindo.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="robots" content="index,follow">
 <style>
-:root{--bg:#EFE8DB;--fg:#2C2B29;--muted:#676662;--card:#F5EFE6;--border:#D7D0C3;--primary:#645336}
+@font-face{font-family:"Instrument Serif";font-style:italic;src:url(fonts/InstrumentSerif-Italic.ttf) format("truetype");font-display:swap}
+:root{--bg:#FFFFFF;--fg:#111111;--muted:#5E5E5E;--card:#F4F4F4;--border:#E8E8E8;--primary:#B04524}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif}
 main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
 a{color:var(--primary)}
-.brand{font-weight:900;letter-spacing:-.04em;font-size:28px;text-decoration:none;color:var(--fg)}
+.brand{display:inline-flex;align-items:flex-end;font-weight:800;letter-spacing:-.03em;font-size:30px;line-height:1;text-decoration:none;color:var(--fg)}.brand .mk{height:26px;width:26px;margin:0 5px 3px 0}.brand .bl{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;color:#B04524;font-size:1.08em}
 h1{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin:28px 0 4px}
 h2{font-size:20px;margin:36px 0 8px}
 .updated{color:var(--muted);font-size:14px;margin:0 0 24px}
@@ -27,9 +29,9 @@ footer a{margin-right:16px}
 </head>
 <body>
 <main>
-<a class="brand" href="./">cabidy</a>
-<h1>Seu guarda-roupa, seu estilista, seu provador.</h1>
-<p>Organize suas roupas, prove peças e looks em você antes de sair de casa e peça sugestões para qualquer ocasião.</p>
+<a class="brand" href="./" aria-label="TapLook"><svg class="mk" viewBox="22 14 56 76" aria-hidden="true"><path d="M28 86V42A22 22 0 0 1 72 42V86Z" fill="none" stroke="#121110" stroke-width="8" stroke-linejoin="round"/><circle cx="50" cy="58" r="5.5" fill="#B04524"/><circle cx="50" cy="58" r="13" fill="none" stroke="#B04524" stroke-width="4.8"/></svg><span class="bt">tap</span><span class="bl">look</span></a>
+<h1>Viu, <span style="color:var(--primary)">provou.</span></h1>
+<p>Viu uma roupa numa rede social ou numa loja? Em segundos, você se vê vestindo. Prove, compare e compartilhe o resultado.</p>
 <p>Em breve na App Store.</p>
 <footer><a href="privacidade">Privacidade</a><a href="termos">Termos</a><a href="suporte">Suporte</a><br>© 2026 Luis Gustavo C. Kravetz</footer>
 </main>
