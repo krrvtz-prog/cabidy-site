@@ -96,7 +96,7 @@ footer a{margin-right:16px}
 <tr><td>Supabase (servidores em São Paulo)</td><td>Banco de dados, login e armazenamento de fotos</td><td>Dados de conta e conteúdo do app</td></tr>
 <tr><td>Anthropic (EUA)</td><td>Leitura das imagens que você escolhe e classificação de peças</td><td>O print ou a foto do momento (produto, pedido, cupom fiscal ou look), as fotos de peças, o recorte de cada peça antes da foto de estúdio (para conferir o tipo) e, no planner de viagem, o destino escrito e o mês. A Anthropic não gera imagens</td></tr>
 <tr><td>Google (EUA)</td><td>Busca da peça pela foto (Google Lens), só quando você toca em "Buscar no Google pela foto"</td><td>Um link temporário (10 minutos) da foto daquela peça. O que acontece depois é da política de privacidade do Google</td></tr>
-<tr><td>Unsplash (EUA)</td><td>Foto do destino da viagem</td><td>Só o nome do destino que você escreveu (nada sobre você). A foto é mostrada direto do Unsplash, que recebe o IP do aparelho ao carregá-la</td></tr>
+<tr><td>Unsplash (EUA)</td><td>Foto do destino da viagem</td><td>Só o nome do destino que você escreveu e, se a cidade não tiver foto, o estado e o país dela (nada sobre você). A foto é mostrada direto do Unsplash, que recebe o IP do aparelho ao carregá-la</td></tr>
 <tr><td>Fal.ai (EUA)</td><td>Foto de estúdio das peças</td><td>O recorte de uma peça (sem fundo quando o iPhone consegue recortar, a partir do iOS 17), quando você salva um desejo a partir de um print ou separa as peças de uma foto. A Fal devolve a foto criada; pedimos em cada chamada que ela não guarde a requisição nem o resultado</td></tr>
 <tr><td>Apple e RevenueCat</td><td>Cobrança, gestão da assinatura e atribuição do Apple Ads</td><td>Identificador interno, status da assinatura e código de campanha (se houver)</td></tr>
 <tr><td>Apple</td><td>Login</td><td>Token de login e e-mail</td></tr>
@@ -114,7 +114,7 @@ footer a{margin-right:16px}
 
 <h2>6. Inteligência artificial</h2>
 <ul>
-<li>A IA do TapLook lê as imagens que você escolhe. A única imagem que ela cria é a foto de estúdio de uma peça (Pro), a partir do recorte só da roupa: não "veste" você, não altera fotos de pessoas e marca a foto criada como IA.</li>
+<li>A IA do TapLook lê as imagens que você escolhe. A única imagem que ela cria é a foto de estúdio de uma peça (Pro), a partir do recorte só da roupa: não "veste" você, não altera fotos de pessoas, e a foto criada fica marcada como IA ao ver a peça (detalhe, listas e guarda-roupa) e na marca técnica de conteúdo gerado por IA gravada no arquivo.</li>
 <li>Antes do primeiro uso, o app pede seu aceite explícito para enviar imagens à Anthropic e à Fal.ai. Sem esse aceite, nada é enviado; você pode preencher desejos e compras à mão.</li>
 <li>O print ou a foto vai na própria requisição e não é guardado no nosso servidor. Guardamos só o resultado (nome, loja, preço, categoria, cor) que você confirmar e o recorte da peça que você salvar.</li>
 <li>Anthropic: pelos termos comerciais da API, não usa suas imagens para treinar modelos e as apaga em até 30 dias (exceto conteúdo sinalizado por violação das políticas de uso, que pode ser guardado por mais tempo para segurança).</li>
@@ -141,7 +141,7 @@ footer a{margin-right:16px}
 <li>Contas sem uso: se você não abrir o app por 24 meses, avisamos por e-mail e, se não voltar em 30 dias, excluímos a conta com todos os dados. Contas com assinatura em vigor não são excluídas por falta de uso.</li>
 <li>Motivo do cancelamento: enquanto a conta existir.</li>
 <li>Registros de uso das funções de IA: até 24 meses.</li>
-<li>Histórico de consentimentos e aceites: até 5 anos; o último de cada tipo fica enquanto a conta existir.</li>
+<li>Histórico de consentimentos e aceites: até 5 anos, sempre apagado junto com a conta; o último de cada tipo fica enquanto a conta existir.</li>
 <li>Dados temporários de limite de uso: até 2 dias.</li>
 <li>Medição de uso: no PostHog por até 12 meses, apagada junto com a conta.</li>
 <li>Ao excluir a conta (Perfil → Configurações → Excluir conta), apagamos imediatamente fotos (inclusive a de perfil), desejos, histórico de preço, compras, looks, viagens, dados de funções antigas e dados de conta, salvo obrigação legal. Cópias de segurança criptografadas do banco são descartadas em até 90 dias, e as das fotos em até 28 dias. Mantemos só o histórico de eventos da assinatura sem vínculo com você, as contagens anônimas e um registro anônimo da saída (tempo de conta, se era assinante, quantidade de peças, país e, se você informar, o motivo).</li>

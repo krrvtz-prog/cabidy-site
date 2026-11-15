@@ -95,7 +95,7 @@ footer a{margin-right:16px}
 <tr><th>Provider</th><th>Role</th><th>Data received</th></tr>
 <tr><td>Supabase (servers in São Paulo)</td><td>Database, sign-in and photo storage</td><td>Account data and app content</td></tr>
 <tr><td>Google (USA)</td><td>Searching for the piece by photo (Google Lens), only when you tap "Search Google by photo"</td><td>A temporary link (10 minutes) to that piece's photo. What happens next falls under Google's privacy policy</td></tr>
-<tr><td>Unsplash (USA)</td><td>Trip destination photo</td><td>Only the destination name you typed (nothing about you). The photo is shown straight from Unsplash, which receives the device IP when loading it</td></tr>
+<tr><td>Unsplash (USA)</td><td>Trip destination photo</td><td>Only the destination name you typed and, if the city has no photo, its state and country (nothing about you). The photo is shown straight from Unsplash, which receives the device IP when loading it</td></tr>
 <tr><td>Fal.ai (USA)</td><td>Studio photos of pieces</td><td>The cutout of one piece (without background when the iPhone can remove it, on iOS 17 or later), when you save a wish from a screenshot or separate the pieces in a photo. Fal returns the created photo; on every call we ask it not to store the request or the result</td></tr>
 <tr><td>Anthropic (USA)</td><td>Reading the images you choose and classifying pieces</td><td>The screenshot or photo of the moment (product, order, receipt or outfit), photos of pieces, the cutout of each piece before the studio photo (to check its type) and, in the trip planner, the typed destination and month. Anthropic does not create images</td></tr>
 <tr><td>Apple and RevenueCat</td><td>Billing, subscription management and Apple Ads attribution</td><td>Internal identifier, subscription status and campaign code (if any)</td></tr>
@@ -114,7 +114,7 @@ footer a{margin-right:16px}
 
 <h2>6. Artificial intelligence</h2>
 <ul>
-<li>TapLook's AI reads the images you choose. The only image it creates is a piece's studio photo (Pro), from the cutout of the garment alone: it doesn't "dress" you, doesn't alter photos of people and marks the created photo as AI.</li>
+<li>TapLook's AI reads the images you choose. The only image it creates is a piece's studio photo (Pro), from the cutout of the garment alone: it doesn't "dress" you, doesn't alter photos of people, and the created photo is marked as AI where you view the piece (detail, lists and wardrobe) and in the technical AI-generated marker written into the file.</li>
 <li>Before first use, the app asks for your explicit consent to send images to Anthropic and Fal.ai. Without it, nothing is sent; you can fill in wishes and purchases by hand.</li>
 <li>The screenshot or photo travels in the request itself and is not stored on our server. We keep only the result (name, store, price, category, color) you confirm and the cut-out of a piece you save.</li>
 <li>Fal.ai: on every call we ask it not to store the request or the result; the created photo goes straight back to the app and isn't on our server until you save the piece. It only receives the piece's cutout, never the full screenshot or photo.</li>
@@ -141,7 +141,7 @@ footer a{margin-right:16px}
 <li>Inactive accounts: if you don't open the app for 24 months, we email you and, if you don't come back within 30 days, we delete the account and all its data. Accounts with an active subscription are not deleted for inactivity.</li>
 <li>Cancellation reason: while the account exists.</li>
 <li>AI usage logs: up to 24 months.</li>
-<li>Consent and acceptance history: up to 5 years; the latest of each type stays while the account exists.</li>
+<li>Consent and acceptance history: up to 5 years, always deleted together with the account; the latest of each type stays while the account exists.</li>
 <li>Temporary usage-limit data: up to 2 days.</li>
 <li>Usage measurement: in PostHog for up to 12 months, deleted with the account.</li>
 <li>When you delete your account (Profile → Settings → Delete account), we immediately delete photos (including the profile photo), wishes, price history, purchases, outfits, trips, old-feature data and account data, unless the law requires otherwise. Encrypted database backups are discarded within 90 days and photo backups within 28 days. We keep only the subscription event history with no link to you, anonymous counts and an anonymous exit record (account age, whether you subscribed, number of pieces, country and, if you tell us, the reason).</li>
