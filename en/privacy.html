@@ -71,6 +71,7 @@ footer a{margin-right:16px}
 <li>Providing the service: wishlist, price history, wardrobe, purchases, outfits, trips and spending.</li>
 <li>Artificial intelligence: images you choose are sent to Anthropic (section 5) only to be read at that moment, and photos of pieces for automatic classification. The cutout of each piece you save (from a store screenshot or separated from a photo) goes to Anthropic to check the type of piece and to Fal.ai to create that piece's studio photo.</li>
 <li>Destination photo: the trip destination name goes to Unsplash, only to find a photo of the city.</li>
+<li>Weather forecast: the destination name goes to OpenStreetMap (to find the city) and the city coordinates to MET Norway (forecast), through our server.</li>
 <li>Subscription: confirming your plan with Apple and RevenueCat.</li>
 <li>Security: usage limits on AI reads against automated abuse.</li>
 <li>Fixing errors: technical failure logs and launch time (Sentry, in the European Union).</li>
@@ -96,6 +97,7 @@ footer a{margin-right:16px}
 <tr><td>Supabase (servers in São Paulo)</td><td>Database, sign-in and photo storage</td><td>Account data and app content</td></tr>
 <tr><td>Google (USA)</td><td>Searching for the piece by photo (Google Lens), only when you tap "Search Google by photo"</td><td>A temporary link (10 minutes) to that piece's photo. What happens next falls under Google's privacy policy</td></tr>
 <tr><td>Unsplash (USA)</td><td>Trip destination photo</td><td>Only the destination name you typed and, if the city has no photo, its state and country (nothing about you). The photo is shown straight from Unsplash, which receives the device IP when loading it</td></tr>
+<tr><td>MET Norway and OpenStreetMap/Nominatim (Norway and United Kingdom)</td><td>Weather forecast for the trip destination ("What to wear, by the forecast")</td><td>Only the destination name and the city coordinates, sent by our server (nothing about you, not even your IP)</td></tr>
 <tr><td>Fal.ai (USA)</td><td>Studio photos of pieces</td><td>The cutout of one piece (without background when the iPhone can remove it, on iOS 17 or later), when you save a wish from a screenshot or separate the pieces in a photo. Fal returns the created photo; on every call we ask it not to store the request or the result</td></tr>
 <tr><td>Anthropic (USA)</td><td>Reading the images you choose and classifying pieces</td><td>The screenshot or photo of the moment (product, order, receipt or outfit), photos of pieces, the cutout of each piece before the studio photo (to check its type) and, in the trip planner, the typed destination and month. Anthropic does not create images</td></tr>
 <tr><td>Apple and RevenueCat</td><td>Billing, subscription management and Apple Ads attribution</td><td>Internal identifier, subscription status and campaign code (if any)</td></tr>

@@ -71,6 +71,7 @@ footer a{margin-right:16px}
 <li>Prestar o serviço: lista de desejos, histórico de preço, guarda-roupa, compras, looks, viagens e gastos.</li>
 <li>Inteligência artificial: as imagens que você escolhe são enviadas à Anthropic (seção 5) só para serem lidas naquele momento, e as fotos de peças para a classificação automática. O recorte de cada peça que você salva (de um print de loja ou separada de uma foto) vai para a Anthropic conferir o tipo de peça e para a Fal.ai criar a foto de estúdio daquela peça.</li>
 <li>Foto do destino: o nome do destino da viagem vai para o Unsplash, só para buscar uma foto da cidade.</li>
+<li>Previsão do tempo: o nome do destino vai para o OpenStreetMap (achar a cidade) e as coordenadas da cidade para o MET Norway (previsão), pelo nosso servidor.</li>
 <li>Assinatura: confirmar seu plano junto à Apple e ao RevenueCat.</li>
 <li>Segurança: limites de uso das leituras por IA contra abuso automatizado.</li>
 <li>Correção de erros: registros técnicos de falha e do tempo de abertura (Sentry, na União Europeia).</li>
@@ -97,6 +98,7 @@ footer a{margin-right:16px}
 <tr><td>Anthropic (EUA)</td><td>Leitura das imagens que você escolhe e classificação de peças</td><td>O print ou a foto do momento (produto, pedido, cupom fiscal ou look), as fotos de peças, o recorte de cada peça antes da foto de estúdio (para conferir o tipo) e, no planner de viagem, o destino escrito e o mês. A Anthropic não gera imagens</td></tr>
 <tr><td>Google (EUA)</td><td>Busca da peça pela foto (Google Lens), só quando você toca em "Buscar no Google pela foto"</td><td>Um link temporário (10 minutos) da foto daquela peça. O que acontece depois é da política de privacidade do Google</td></tr>
 <tr><td>Unsplash (EUA)</td><td>Foto do destino da viagem</td><td>Só o nome do destino que você escreveu e, se a cidade não tiver foto, o estado e o país dela (nada sobre você). A foto é mostrada direto do Unsplash, que recebe o IP do aparelho ao carregá-la</td></tr>
+<tr><td>MET Norway e OpenStreetMap/Nominatim (Noruega e Reino Unido)</td><td>Previsão do tempo do destino da viagem ("O que vestir, pela previsão")</td><td>Só o nome do destino e as coordenadas da cidade, enviados pelo nosso servidor (nada sobre você, nem o seu IP)</td></tr>
 <tr><td>Fal.ai (EUA)</td><td>Foto de estúdio das peças</td><td>O recorte de uma peça (sem fundo quando o iPhone consegue recortar, a partir do iOS 17), quando você salva um desejo a partir de um print ou separa as peças de uma foto. A Fal devolve a foto criada; pedimos em cada chamada que ela não guarde a requisição nem o resultado</td></tr>
 <tr><td>Apple e RevenueCat</td><td>Cobrança, gestão da assinatura e atribuição do Apple Ads</td><td>Identificador interno, status da assinatura e código de campanha (se houver)</td></tr>
 <tr><td>Apple</td><td>Login</td><td>Token de login e e-mail</td></tr>
